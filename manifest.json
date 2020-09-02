@@ -1,0 +1,34 @@
+{
+  "background": {
+    "scripts": [
+      "src/js/common.js"
+    ]
+  },
+  "content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'",
+  "browser_action": {
+    "default_popup": "src/html/popup.html",
+    "default_icon": {
+      "128": "src/icons/converterDark.png"
+    }
+  },
+  "description": "Convert lenght unit from CM to M etc..",
+  "homepage_url": "https://github.com/bindrakesh",
+  "icons": {
+    "128": "src/icons/converter.png"
+  },
+  "manifest_version": 2,
+  "name": "Length Converter",
+  "short_name": "Length Converter",
+  "options_ui": {
+    "chrome_style": false,
+    "page": "src/html/weight.html"
+  },
+  "permissions": [
+    "cookies",
+    "storage",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+  "version": "1.0.7"
+}
