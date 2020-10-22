@@ -10,7 +10,7 @@
 
 inputMeters.addEventListener("input",metersFun);
 inputMiles.addEventListener("input",milesFun);
-inputMiles.addEventListener("input",kilometersFun);
+inputKilometers.addEventListener("input",kilometersFun);
 inputYards.addEventListener("input",yardsFun);
 inputcm.addEventListener("input",cmFun);
 inputInches.addEventListener("input",inchesFun);
@@ -48,7 +48,7 @@ function milesFun(){
     inputcm.value=(valNum/0.0000062137).toFixed();
     inputYards.value=(valNum*1760).toFixed();
     inputKilometers.value=(valNum/0.62137).toFixed(2);
-    input
+    inputMM.value=(valNum*1.609e+6)
 }
 
 function kilometersFun(){
@@ -58,8 +58,8 @@ function kilometersFun(){
     inputInches.value=(valNum*39370).toFixed();
     inputcm.value=(valNum*100000).toFixed();
     inputYards.value=(valNum*1093.6).toFixed();
-    inputMiles.value=(valNum*0.62137).toFixed(2);    
-
+    inputMiles.value=(valNum*0.62137).toFixed(2);   
+    inputMM.value=(valNum*1e+6);    
 }
 
 function yardsFun(){
@@ -70,6 +70,7 @@ function yardsFun(){
     inputcm.value=(valNum/0.010936).toFixed();
     inputKilometers.value=(valNum/1093.6).toFixed(5);
     inputMiles.value=(valNum*0.00056818).toFixed(5);
+    inputMM.value=(valNum*914);
 }
 
 function cmFun(){
@@ -80,6 +81,7 @@ function cmFun(){
     inputYards.value=(valNum*0.010936).toFixed(3);    
     inputKilometers.value=(valNum/100000).toFixed(6);
     inputMiles.value=(valNum*0.0000062137).toFixed(6);
+    inputMM.value=(valNum*10);
 }
 
 function inchesFun(){
@@ -90,6 +92,7 @@ function inchesFun(){
     inputYards.value=(valNum*0.027778).toFixed(3);    
     inputKilometers.value=(valNum/39370).toFixed(6);
     inputMiles.value=(valNum*0.000015783).toFixed(6);
+    inputMM.value=(valNum*25.4).toFixed(3);   
 }
 
 function feetFun(){
@@ -100,4 +103,5 @@ function feetFun(){
     inputYards.value=(valNum*0.33333).toFixed(2);
     inputKilometers.value=(valNum/3280.8).toFixed(5);    
     inputMiles.value=(valNum*0.00018939).toFixed(5); 
+    inputMM.value=(valNum*305);
 }
