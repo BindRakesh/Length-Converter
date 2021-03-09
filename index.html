@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <title>
+        Length Converter
+    </title>
+    <link rel="stylesheet" href="bs5.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        body {
+            background: #348F50;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #56B4D3, #348F50);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #56B4D3, #348F50);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row mt-1">
+            <div class="col col-md-6 col-sm-6 col-lg-4 col-12 mt-1">
+                <div class="card" style="width: 100%;">
+                    <img src="img/length.jpg" class="card-img-top" alt="length convert">
+                    <div class="card-body">
+                        <h5 class="card-title">Length Converter</h5>
+                        <p class="card-text">It will convert all length units</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-6 col-sm-6 col-lg-4 col-12 mt-1">
+                <div class="card" style="width: 100%;">
+                    <img src="img/weight.jpg" class="card-img-top" alt="weight convert">
+                    <div class="card-body">
+                        <h5 class="card-title">Weight Converter</h5>
+                        <p class="card-text">It will convert all weight units</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-6 col-sm-6 col-lg-4 col-12 mt-1">
+                <div class="card" style="width: 100%;">
+                    <img src="img/color.jpg" class="card-img-top" alt="color shaded">
+                    <div class="card-body">
+                        <h5 class="card-title">Color Shades</h5>
+                        <p class="card-text">for listing all shades of a particular color</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-6">
+                <div id="extension">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+    $(document).ready(function() {
+        $('#extension').load("html/popup.html");
+    });
+</script>
+
+</html>
