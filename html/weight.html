@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+   <link rel="stylesheet" href="../css/style.css">
+  <title>Weigth Converter ~ Bindrks</title>
+  <style>
+    html {
+      min-width: 350px;
+      max-width: 400px;
+    }
+    body {
+      min-width: 350px;
+      max-width: 400px;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      font-family: sans-serif;
+    }
+
+    .field{
+      width:100px;
+      margin-right: 10px;
+    }
+    label{
+      margin-left: 5px;
+    }
+    table, tr, td{
+      padding: 5px;
+    }
+
+  </style>
+</head>
+<body>
+  <div style="width:350px;"><center><a href="color.html">Color</a> | <a href="popup.html">Length Converter</a> | <a href="https://github.com/bindrakesh" target="_blank">GitHub</a> </center></div>
+
+  <!-- <a href="popup.html" style="text-align: center;font-size: 15px;" class="button btn-danger"> Back </a> -->
+<div id="content">
+<table>
+    <tr>
+        <td><label class="label label-success">Kilograms</label></td>
+        <td><input class="field" id="inputKilograms" class="w3-input w3-border" type="number" placeholder="Kilograms" ></td>
+        <td><label class="label label-success">Grams</label></td>
+        <td><input class="field" id="inputGrams" class="w3-input w3-border" type="number" placeholder="Grams" ></td>
+    </tr>
+    <tr>
+        <td><label class="label label-success">Pounds</label></td>
+        <td><input class="field" id="inputPounds" class="w3-input w3-border" type="number" placeholder="Pounds" ></td>
+        <td><label class="label label-success">Ounces</label></td>
+        <td><input class="field" id="inputOunces" class="w3-input w3-border" type="number" placeholder="Ounces" ></td>
+    </tr>
+    <tr>
+        <td><label class="label label-success">Stones</label></td>
+        <td><input class="field" id="inputStones" class="w3-input w3-border" type="number" placeholder="Stones" ></td>
+  </table>
+
+</div>
+
+<script src="../js/weightConverter.js"></script>
+</body>
+</html>

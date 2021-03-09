@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color Shades</title>
+   <link rel="stylesheet" href="../css/style.css">
+   <script src="../js/jquery.min.js"></script>
+   <style>
+	   	html {
+	      min-width: 350px;
+	      max-width: 400px;
+	    }
+	    body {
+	      min-width: 350px;
+	      max-width: 400px;
+	      margin: 0;
+	      padding: 0;
+	      display: flex;
+	      flex-direction: column;
+	      font-family: sans-serif;
+	    }
+
+	    table{
+	    	align:center;
+	    	margin-left: 2px;
+	    	margin-right: 2px;
+	    }
+	    td {
+		  width: 69px;
+		  text-align: center;
+		  height: 50px; 
+		  transition:0.25s;
+		  /*box-shadow:inset 0 0 0 1px; */
+		}
+		td:hover {
+		  background-size:  100% 100%;
+		  transform:scale(1.4545,1.34);
+		  transform-origin:center;
+		 }
+		 .color{
+		 	/*this class is only for hiding other div when a color is selected*/
+		 	/*don't delete this class*/
+		 	margin-bottom: 10px;
+		 	margin-left: 10px;
+		 	margin-right: 10px;
+		 }
+   </style>
+</head>
+<body>
+	<div style="width:350px;"><center><a href="popup.html"> Length Converter</a> | <a href="weight.html">Weight Converter</a> | <a href="https://github.com/bindrakesh" target="_blank">GitHub</a> </center></div>
+
+	<div id="selectColor" class="form-group">
+	  <label for="sel1">Select Color</label>
+	  <select class="form-control" id="sel1">
+	    <option value="colorWhite">White</option>
+	    <option value="colorYellow" style="background: yellow	;">Yellow</option>
+	    <option value="colorOrange" style="background: orange; color: white">Orange</option>
+	    <option value="colorRed" style="background: red; color: white;">Red</option>
+	    <option value="colorPink" style="background: pink; color:black;">Pink</option>
+	    <option value="colorPurple" style="background: purple;color: white;">Purple</option>
+	    <option value="colorTan" style="background: tan; color:black;">Tan</option>
+	    <option value="colorBlue" style="background: blue; color:white;">Blue</option>
+	    <option value="colorGreen" style="background: green;color:white; ">Green</option>
+	    <option value="colorBrown" style="background: #632A00;color:white; ">Brown</option>
+	    <option value="colorGrey" style="background: grey; color:white ">Grey</option>
+	    <option value="colorBlack" style="background:black ;color:white ">Black</option>
+	  </select>
+	</div>
+
+	<div id="colorWhite" class="color" >
+		<table class="center" style="margin-left: 2px;"> 	
+			<tr>
+				<td style="background:#FFFEFC">white</td>
+				<td style="background:#FBFCF7">pearl</td>
+				<td style="background:#FEFAF1">alabster</td>
+				<td style="background:#F5FEFD">snow</td>
+				<td style="background:#FDF6E4">ivory</td>
+			</tr>
+			<tr>
+				<td style="background:#FFFADA">cream</td>
+				<td style="background:#FEF9E3">egg shell</td>
+				<td style="background:#FBFCF7">cotton</td>
+				<td style="background:#FAFAF2">chiffon</td>
+				<td style="background:#F7EFEC">salt</td>
+			</tr>
+			<tr>
+				<td style="background:#FAF3EB">lace</td>
+				<td style="background:#FFF1E6">coconut</td>
+				<td style="background:#F2EAD3">linen</td>
+				<td style="background:#E7DECC">bone</td>
+				<td style="background:#FFFFFF">daisy</td>
+			</tr>
+			<tr>
+				<td style="background:#FBFCF7">powder</td>
+				<td style="background:#ECFCFC">frost</td>
+				<td style="background:#FFFEFC">porcelain</td>
+				<td style="background:#FBF5DF">parchment</td>
+				<td style="background:#FAF5EF">rice</td>
+			</tr>
+		</table>
+	</div>
+	<div id="colorYellow" class="color" style="display: none;"	>
+		<table>
+			<tr>
+				<td style="background: #FDE64B">yellow</td>
+				<td style="background: #F9C802">canary</td>
+				<td style="background: #F9A602">gold</td>
+				<td style="background: #FDEE87">daffodil</td>
+				<td style="background: #D6B75A">flaxen</td>
+			</tr>	
+			<tr>		
+				<td style="background: #FEE227">butter</td>
+				<td style="background: #EFFD5F">lemon</td>
+				<td style="background: #E8B828">mustard</td>
+				<td style="background: #E4CD05">corn</td>
+				<td style="background: #E3B104">medallion</td>
+			</tr>
+			<tr>
+				<td style="background: #FDCE2A">dandelion</td>			
+				<td style="background: #FDA50F">fire</td>
+				<td style="background: #FCE205">bumblebee</td>
+				<td style="background: #FCF4A3">banana</td>
+				<td style="background: #FABD02">butterscotch</td>
+
+			</tr>
+			<tr>
+				<td style="background: #C29200">dijon</td>	
+				<td style="background: #FFC30B">honey</td>
+				<td style="background: #FEEB75">blonde</td>
+				<td style="background: #FEE227">pineapple</td>
+				<td style="background: #FCD12A">tuscan sun</td>
+			</tr>
+		</table>
+	</div>
+
+	<div id="colorOrange" class="color" style="display: none;">
+		<table style="margin-left: 2px;">
+			<tr>				
+				<td style="background: #ED7014">orange</td>
+				<td style="background: #F98228">tangerine</td>
+				<td style="background: #FDAE1D">marigold</td>
+				<td style="background: #B56727">cider</td>
+				<td style="background: #8C4004">rust</td>
+			</tr>
+			<tr>
+				<td style="background: #BC5602">ginger</td>
+				<td style="background: #FC6B02">tiger</td>
+				<td style="background: #DD561C">fire</td>
+				<td style="background: #B2560D">bronze</td>
+				<td style="background: #FCA172">cantaloupe</td>
+
+			</tr>
+			<tr>				
+				<td style="background: #ED820E">apricot</td>
+				<td style="background: #7F400B">clay</td>
+				<td style="background: #EC9706">honey</td>
+				<td style="background: #ED7117">carrot</td>
+				<td style="background: #C95C0A">squash</td>
+			</tr>
+			<tr>				
+				<td style="background: #7A3903">spice</td>
+				<td style="background: #D16002">marmalade</td>
+				<td style="background: #893101">amber</td>
+				<td style="background: #D67129">sandstone</td>
+				<td style="background: #CC5801">yam</td>
+			</tr>
+		</table>
+
+	</div>
+	<div id="colorRed" class="color" style="display: none;color: white;">
+		<table style="margin-left: 2px;">
+			<tr>				
+				<td style="background: #D0312D">red</td>
+				<td style="background: #990F02">cherry</td>
+				<td style="background: #E2252B">rose</td>
+				<td style="background: #600F0B">jam</td>
+				<td style="background: #541F1B">merlot</td>
+			</tr>
+			<tr>				
+				<td style="background: #600B04">garnet</td>
+				<td style="background: #B80F0A">crimson</td>
+				<td style="background: #900603">ruby</td>
+				<td style="background: #910D09">scarlet</td>
+				<td style="background: #4C0805">wine</td>
+
+			</tr>
+			<tr>
+
+				<td style="background: #7E2811">brick</td>
+				<td style="background: #A91B0D">apple</td>
+				<td style="background: #420D09">mahogany</td>
+				<td style="background: #710C04">blood</td>
+				<td style="background: #5E1914">sangria</td>
+				
+			</tr>
+			<tr>
+				
+				<td style="background: #791812">berry</td>
+				<td style="background: #670C07">currant</td>
+				<td style="background: #BC5449">blush</td>
+				<td style="background: #D21502">candy</td>
+				<td style="background: #9C1003">lipstick</td>
+
+
+			</tr>
+
+		</table>
+
+	</div>
+	<div class="color" id="colorPink" style="display: none;">
+		<table>
+			<tr>
+				
+				<td style="background: #F69ACD">pink</td>
+				<td style="background: #FC94AD">rose</td>
+				<td style="background: #FC46AA">fushcia</td>
+				<td style="background: #F15278">punch</td>
+				<td style="background: #FEC5E5">blush</td>
+
+			</tr>
+			<tr>
+				
+				<td style="background: #FE7F9C">watermelon</td>
+				<td style="background: #FDA4B8">flamingo</td>
+				<td style="background: #F26B8B">rouge</td>
+				<td style="background: #FDAB9F">salmon</td>
+				<td style="background: #FE7D68">coral</td>
+
+			</tr>
+			<tr>
+				
+				<td style="background: #FB9483">peach</td>
+				<td style="background: #FC4C4E">strawberry</td>
+				<td style="background: #A04242">rosewood</td>
+				<td style="background: #FBBBCB">lemonade</td>
+				<td style="background: #FA86C5">taffy</td>
+
+			</tr>
+			<tr>
+				
+				<td style="background: #FD5CA8">bubblegum</td>
+				<td style="background: #F69ABF">ballet slipper</td>
+				<td style="background: #F2B8C6">crepe</td>
+				<td style="background: #E11584">magenta</td>
+				<td style="background: #FF1695">hot pink</td>
+
+			</tr>
+
+		</table>
+
+	</div>
+	<div id="colorPurple" class="color" style="display: none;color: white;">
+		<table >
+			<tr>
+				
+				<td style="background: #A32CC4">purple</td>
+				<td style="background: #7A4A88">mauve</td>
+				<td style="background: #710193">violet</td>
+				<td style="background: #620436">boysenberry</td>
+				<td style="background: #E39FF6">lavender</td>
+
+			</tr>
+			<tr>
+				
+				<td style="background: #601A36">plum</td>
+				<td style="background: #A10559">magenta</td>
+				<td style="background: #B660CD">lilac</td>
+				<td style="background: #663047">grape</td>
+				<td style="background: #BD93D3">periwinkle</td>
+
+			</tr>
+			<tr>
+				
+				<td style="background: #4D0F28">sangria</td>
+				<td style="background: #311432">eggplant</td>
+				<td style="background: #66042D">jam</td>
+				<td style="background: #9866C5">iris</td>
+				<td style="background: #9B7CB8">heather</td>
+
+			</tr>
+			<tr>
+				
+				<td style="background: #9B7CB8">amethyst</td>
+				<td style="background: #290916">raisin</td>
+				<td style="background: #AF69EE">orchid</td>
+				<td style="background: #4C0120">mulberry</td>
+				<td style="background: #2C051A">wine</td>
+
+			</tr>
+
+		</table>
+
+	</div>
+	<div id="colorTan" class="color" style="display: none;">
+		<table>
+			<tr>
+				
+				<td style="background: #E6DBAD">tan</td>
+				<td style="background: #ECDD9A">beige</td>
+				<td style="background: #F8E076">macaroon</td>
+				<td style="background: #C9BB8E">hazel wood</td>
+				<td style="background: #D6B75A">granola</td>
+
+			</tr>
+			<tr>
+				
+				<td style="background: #DEC98A">oat</td>
+				<td style="background: #FAE29C">egg nog</td>
+				<td style="background: #C7A951">fawn</td>
+				<td style="background: #F3EBAD">sugar cookie</td>
+				<td style="background: #D7B963">sand</td>
+
+			</tr>
+			<tr>
+				
+				<td style="background: #E3B778">sepia</td>
+				<td style="background: #E9C17B">latte</td>
+				<td style="background: #DCD7A0">oyster</td>
+				<td style="background: #E3C565">biscotti</td>
+				<td style="background: #FDE992">parmesan</td>
+
+			</tr>
+			<tr>
+				
+				<td style="background: #BDA55D">hazelnut</td>
+				<td style="background: #DAC27C">sandcastle</td>
+				<td style="background: #FDEFB2">buttermilk</td>
+				<td style="background: #ECE8B9">sand dollar</td>
+				<td style="background: #FBE790">shortbread</td>
+
+			</tr>
+
+		</table>
+
+	</div>
+	<div id="colorBlue" class="color" style="display: none;color:white;">
+		<table>
+			<tr>
+				<td style="background: #3A43BA">blue</td>				
+				<td style="background: #757B87">slate</td>
+				<td style="background: #62C5DA; color:black;">sky</td>
+				<td style="background: #0B1171">navy</td>
+				<td style="background: #281E5D">indigo</td>				
+			</tr>
+			<tr>
+				<td style="background: #1338BD">cobalt</td>				
+				<td style="background: #48AAAD">teal</td>
+				<td style="background: #006165">ocean</td>
+				<td style="background: #012D36">peacock</td>
+				<td style="background: #1620A6">azure</td>				
+			</tr>
+			<tr>
+				<td style="background: #0492C2">cerulean</td>				
+				<td style="background: #2732C2">lapis</td>
+				<td style="background: #2C3E4C">spruce</td>
+				<td style="background: #59788D">stone</td>
+				<td style="background: #1E456E">aegean</td>				
+			</tr>
+			<tr>
+				<td style="background: #241570">berry</td>				
+				<td style="background: #151E3D">denim</td>
+				<td style="background: #061094">admiral</td>
+				<td style="background: #52B2C0">sapphire</td>
+				<td style="background: #82EDFD; color:black;">arctic</td>				
+			</tr>
+		</table>
+	</div>
+	<div id="colorGreen" class="color" style="display: none;">
+		<table>
+			<tr>
+				
+				<td style="background: #3BB143">green</td>
+				<td style="background: #B0FC38">chartreuse</td>
+				<td style="background: #3A5311">juniper</td>
+				<td style="background: #728C69">sage</td>
+				<td style="background: #AEF35A">lime</td>
+
+			</tr>
+			<tr>
+				
+				<td style="background: #5CBC63">fern</td>
+				<td style="background: #98BF64">olive</td>
+				<td style="background: #028910">emeral</td>
+				<td style="background: #74B62E">pear</td>
+				<td style="background: #466D1E">moss</td>
+
+			</tr>
+			<tr>
+				
+				<td style="background: #03AC13">shamrock</td>
+				<td style="background: #3CEC97">seafoam</td>
+				<td style="background: #234F1E">pine</td>
+				<td style="background: #03C04A">parakeet</td>
+				<td style="background: #98EDC3">mint</td>
+
+			</tr>
+			<tr>
+				
+				<td style="background: #354A21">seaweed</td>
+				<td style="background: #597D35">pickel</td>
+				<td style="background: #B2D3C2">pistachio</td>
+				<td style="background: #32612D">basil</td>
+				<td style="background: #607D3B">crocodile</td>
+
+			</tr>
+
+		</table>
+
+	</div>
+	<div id="colorBrown" class="color" style="display: none;color:white;">
+		<table style="margin-left: 2px;">
+			<tr>
+				
+				<td style="background: #231709">brown</td>
+				<td style="background: #4B371C">coffee</td>
+				<td style="background: #3C280D">mocha</td>
+				<td style="background: #795C34">peanut</td>
+				<td style="background: #36260F">carob</td>
+
+			</tr>
+			<tr>
+				
+				<td style="background: #371D10">hickory</td>
+				<td style="background: #3F301D">wood</td>
+				<td style="background: #4A2512">pecan</td>
+				<td style="background: #432711">walnut</td>
+				<td style="background: #65350F">caramel</td>
+
+			</tr>
+			<tr>
+				
+				<td style="background: #5D2C04">gingerbread</td>
+				<td style="background: #472001">syrup</td>
+				<td style="background: #2C1503">chocolate</td>
+				<td style="background: #9A7B4F">tortilla</td>
+				<td style="background: #352315">umber</td>
+
+			</tr>
+			<tr>
+				
+				<td style="background: #7E481C">tawny</td>
+				<td style="background: #3A1E08">burnette</td>
+				<td style="background: #632A0D">cinnamon</td>
+				<td style="background: #522915">penny</td>
+				<td style="background: #4A3728">cedar</td>
+
+			</tr>
+
+		</table>
+
+	</div>	
+	<div id="colorGrey" class="color" style="display: none;color: white;">
+		<table style="margin-left: 2px;">
+			<tr>
+				
+				<td style="background: #6C626D">grey</td>
+				<td style="background: #373737">shadow</td>
+				<td style="background: #584D5B">graphite</td>
+				<td style="background: #322D31">iron</td>
+				<td style="background: #6A6880">pewter</td>
+
+			</tr>
+			<tr>
+				
+				<td style="background: #C6C6D0">cloud</td>
+				<td style="background: #ADADC7">silver</td>
+				<td style="background: #59515E">smoke</td>
+				<td style="background: #3F3D53">slate</td>
+				<td style="background: #42424C">anchor</td>
+
+			</tr>
+			<tr>
+				
+				<td style="background: #554C4D">ash</td>
+				<td style="background: #4D4C5C">porpoise</td>
+				<td style="background: #7C6E7F">dove</td>
+				<td style="background: #655965">fog</td>
+				<td style="background: #7E7D9C">flint</td>
+
+			</tr>
+			<tr>
+				
+				<td style="background: #222023">charcoal</td>
+				<td style="background: #333333">pebble</td>
+				<td style="background: #403F4D">lead</td>
+				<td style="background: #9897A9">coin</td>
+				<td style="background: #787276">fossil</td>
+
+			</tr>
+
+		</table>
+
+	</div>	
+	<div id="colorBlack" class="color" style="display: none;color: white;">
+		<table style="margin-left: 2px;">
+			<tr>
+				
+				<td style="background: #000000">black</td>
+				<td style="background: #080401">ebony</td>
+				<td style="background: #0D0906">crow</td>
+				<td style="background: #28231D">charcoal</td>
+				<td style="background: #000004">midnight</td>
+
+			</tr>
+			<tr>
+				
+				<td style="background: #000000">ink</td>
+				<td style="background: #040301">raven</td>
+				<td style="background: #050100">oil</td>
+				<td style="background: #090806">grease</td>
+				<td style="background: #030106">onyx</td>
+			</tr>
+			<tr>
+				
+				<td style="background: #020001">pitch</td>
+				<td style="background: #150E06">soot</td>
+				<td style="background: #030200">sable</td>
+				<td style="background: #000000">jet black</td>
+				<td style="background: #0B0A08">coal</td>
+
+			</tr>
+			<tr>
+				
+				<td style="background: #0D0C0A">metal</td>
+				<td style="background: #020403">obsidian</td>
+				<td style="background: #010302">jade</td>
+				<td style="background: #030200">spider</td>
+				<td style="background: #0B0704">leather</td>
+
+			</tr>
+
+		</table>
+
+	</div>
+<script src="../js/color.js"></script>
+</body>
+</html>
